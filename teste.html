@@ -6,29 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+   <!-- Link Bootstrap CSS -->
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <!-- Lik Bootstrap JavaScript -->
+  <link src="/js/bootstrap.bundle.min.js">
+  <!-- Link CSS PADRÂO -->
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="icon" href="/image/ícone .jfif">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+</head>
 
     <link rel="stylesheet" href="teste.css">
 
 </head>
 
 <body>
+    <!-- inicio navbar principal -->
     <nav class="navbar bg-black fixed-top">
         <div class="container-fluid">
-
-            <button class="navbar-toggler btn-toggler" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <!-- <span class="navbar-toggler-icon"></span> -->
-                <img src="image/icone_menu.png" alt="" class="espacing">
-
+            
+            <!-- inicio buton menu -->
+            <button class="btn">
+                <span class="icon">
+                    <svg viewBox="0 0 175 80" width="40" height="40">
+                        <rect width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                        <rect y="30" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                        <rect y="60" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                    </svg>
+                </span>
+                <span class="text"><img src="/image/ícone_-removebg-preview.2.0.png" width="80px"></span>
             </button>
+            <!-- fim button menu -->
+            
+            <!-- logo navbar principal -->
             <img src="image/Logo1.0-removebg-preview.png" width="200px" alt="..." class="center">
+            <!-- fim logo navbar principal -->
+            
+            <!-- barra de pesquisa -->
             <form class="d-flex" role="Procurar">
                 <input class="form-control me-2" type="search" placeholder="Procurar" aria-label="Procurar">
                 <button class="btn btn-outline-success" type="submit">Procurar</button>
             </form>
+            <!-- fim da barra de pesquisa -->
 
+            
             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
 
@@ -69,10 +97,61 @@
 
         </div>
     </nav>
+    <!-- fim navbar principal -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+    <!-- Navbar secundária -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <!-- Começo dropdown link -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="image/ícone .jfif" alt="" width="40px" height="40px">
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">MEGA OFERTAS</a></li>
+              <li><a class="dropdown-item" href="#">FARÓIS</a></li>
+              <li><a class="dropdown-item" href="#">MOTOCICLETAS</a></li>
+              <li><a class="dropdown-item" href="#">ACESSÓRIOS EXTERNOS</a></li>
+            </ul>
+          </li>
+          <!-- Fim Dropdown link -->
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"><img src="image/icone_pneu.png" alt="" width="40px"
+                height="40px">PNEUS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img src="image/icone_raio.png" alt="" width="40px"
+                height="40px">ELETRICIDADE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img src="image/icone_som.png" alt="" width="40px" height="40px">SOM</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"><img src="image/icone_ferramentas.png" alt="" width="40px"
+                height="40px">FERRAMENTAS</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"><img src="image/icone_bateria.png" alt="" width="40px" height="40px">PEÇAS</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"><img src="image/icone_volante.png" alt="" width="40px" height="40px">ACESSÓRIOS
+              INTERNOS</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"><img src="image/icone_aditivos.png" alt="" width="40px"
+                height="40px">ADITIVOS</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"><img src="image/icone_lubrificante.png" alt="" width="40px"
+                height="40px">LUBRIFICANTE</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
 </body>
 
