@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Braah+One&family=Mooli&family=Sigmar&display=swap');
 
+body {
+  transition: background-color .5s;
+}
+
 form {
   margin-left: -650px;
 }
@@ -141,8 +145,7 @@ h2 {
 }
 
 .pneus img {
-  width: 100%;
-  max-width: 350px;
+  width: 350px;
   height: 300px;
   object-fit: cover;
   border-radius: 10px;
@@ -185,7 +188,7 @@ h2 {
 .btn-venda {
   background-color: rgb(0, 223, 0);
   width: 100px;
-  margin-left: 95px;
+  margin-left: 125px;
   border-radius: 10px;
 }
 
