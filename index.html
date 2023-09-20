@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mechanix Choice</title>
 
+  <!-- Link JavaScrip padrão-->
+  <script src="script.js"></script>
   <!-- Lik Bootstrap JavaScript -->
   <link src="/js/bootstrap.bundle.min.js">
   <!-- Link CSS PADRÂO -->
@@ -35,16 +37,28 @@
     <div class="container-fluid">
       
     <!-- começo button menu (com div dentro de uma div do navbar) -->
-      <div><button class="btn">
-        <span class="icon">
-            <svg viewBox="0 0 175 80" width="40" height="40">
-                <rect width="80" height="15" fill="#f0f0f0" rx="10"></rect>
-                <rect y="30" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
-                <rect y="60" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
-            </svg>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="">About</a>
+        <a href="">Services</a>
+        <a href="">Arroz</a>
+        <a href="">Feijão</a>
+      </div>
+
+      <div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">
+          <button class="btn">
+            <span class="icon">
+                <svg viewBox="0 0 175 80" width="40" height="40">
+                    <rect width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                    <rect y="30" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                    <rect y="60" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                </svg>
+            </span>
+            <span class="text"><img src="/image/ícone_-removebg-preview.2.0.png" width="50px"></span>
+          </button>
         </span>
-        <span class="text"><img src="/image/ícone_-removebg-preview.2.0.png" width="50px"></span>
-    </button></div>
+    </div>
     <!-- fim button menu -->
       
     <!-- ícone navbar três pontos -->
@@ -152,37 +166,50 @@
         </div>
         <div class="con-pneu">
           <img src="image/pneu2.jpg" alt="">
+          <p>Pneu jubiscleuson 347652398AB</p>
           <button class="bi bi-cart3 btn-venda1"></button>
         </div>
         <div class="con-pneu">
           <img src="image/pneu3.png" alt="">
+          <p>Pneu jubiscleuson 347652398AB</p>
           <button class="bi bi-cart3 btn-venda"></button>
         </div>
       </div>
       <div class="pneu2">
         <div class="con-pneu">
           <img src="image/pneu4.png" alt="">
+          <p>Pneu jubiscleuson 347652398AB</p>
+          <button class="bi bi-cart3 btn-venda"></button>
         </div>
         <div class="con-pneu">
           <img src="image/pneu5.png" alt="">
+          <p>Pneu jubiscleuson 347652398AB</p>
+          <button class="bi bi-cart3 btn-venda"></button>
         </div>
         <div class="con-pneu"> 
           <img src="image/pneu6.png" alt="">
+          <p>Pneu jubiscleuson 347652398AB</p>
+          <button class="bi bi-cart3 btn-venda"></button>
         </div>
       </div>
       <div class="pneu3">
         <div class="con-pneu">
           <img src="image/pneu7.png" alt="">
+          <p>Pneu jubiscleuson 347652398AB</p>
+          <button class="bi bi-cart3 btn-venda"></button>
         </div>
         <div class="con-pneu">
           <img src="image/pneu8.png" alt="">
+          <p>Pneu jubiscleuson 347652398AB</p>
+          <button class="bi bi-cart3 btn-venda"></button>
         </div>
         <div class="con-pneu">
           <img src="image/pneu9.png" alt="">
+          <p>Pneu jubiscleuson 347652398AB</p>
+          <button class="bi bi-cart3 btn-venda"></button>
         </div>
       </div>
   </div>
 
 </body>
-
 </html>
