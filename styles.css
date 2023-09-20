@@ -240,3 +240,10 @@ h2 {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+
+.bi-arrow-up-circle-fill {
+  bottom: 2rem;
+  right: 2rem;
+  cursor: pointer;
+
+}
