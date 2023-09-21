@@ -1,11 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Braah+One&family=Mooli&family=Sigmar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+.font-pneus{
+  font-family: 'oswald';
+}
 
 body {
   transition: background-color .5s;
 }
 
 form {
-  margin-left: -650px;
+  margin-right: 100px;
+}
+
+.img-logo-central{
+  width: 20%;
+  margin-left: 675px;
+}
+
+.icone-coracao{
+  margin-right: 20px;
+}
+
+.icone-carrinho-navbar{
+  margin-right: 20px;
 }
 
 .btn {

@@ -39,10 +39,10 @@
     <!-- COMEÇO BUTTON MENU (COM DIV DENTRO DE UMA DIV DO NAVBAR) -->
       <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="">About</a>
-        <a href="">Services</a>
-        <a href="">Arroz</a>
-        <a href="">Feijão</a>
+        <a href=""><img src="/image/ícone_casa_sidebar-removebg-preview.png" height="47px" width=60px>HOME</a>
+        <a href=""><img src="/image/meus-pedidos.png" height="47px" width=60px>PEDIDOS</a>
+        <!-- <a href="">MINHA GARAGEM</a> -->
+        <a href=""><img src="/image/engrenagem.png" height="47px" width=60px>SUPORTE</a>
       </div>
 
       <div>
@@ -61,11 +61,11 @@
     </div>
     <!-- FIM BUTTON MENU-->
       
-    <!-- ÍCONE NAVBAR TRÊS PONTOS -->
+    <!-- LOGO CENTRAL -->
     <a class="navbar-brand" href="#">
-        <img src="image/Logo1.0-removebg-preview.png" width="30%" alt="">
+        <img src="image/Logo1.0-removebg-preview.png" width="30%" alt="" class="img-logo-central">
       </a>
-    <!-- FIM ÍCONE NAVBAR TRÊS PONTOS -->
+    <!-- FIM LOGO CENTRAL -->
       
       <!-- ÍNICIO DA BARRA DE PESQUISA -->
       <form class="d-flex " role="Procurar">
@@ -78,6 +78,14 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <!-- FIM DA BARRA DE PESQUISA  -->
+      
+      <!-- ÍCONES NAVBAR PRINCIPAL -->
+      <div><img src="/image/coracao-navbar.png" width="40px" height="40px" class="icone-coracao">
+      </div>
+      <div><img src="/image/carrinho-navbar.png" width="40px" height="40px" class="icone-carrinho-navbar">
+      </div>
+      <!-- FIM ÍCONES NAVBAR PRINCIPPAL -->
+      
       
       <!-- 👇parte do código da barra de pesquisa q deixa quase centralizado👇 -->
       <!-- <div class="collapse navbar-collapse" id="navbarNavDropdown"> -->
@@ -111,7 +119,7 @@
 
 
           <!-- ÍNICIO DOS ITENS/ÍCONES DA NAVBAR -->
-          <li class="nav-item alinhamento li">
+          <li class="nav-item li">
             <a class="nav-link active fonte" aria-current="page" href="#pneu"><img src="image/pneu_caminhão_ícone-removebg-preview.png" alt="" width="40px"
                 height="40px">PNEUS</a>
           </li>
@@ -134,6 +142,12 @@
           <li class="nav-item li">
             <a href="#" class="nav-link active fonte"><img src="image/bocal_ícone-removebg-preview.png" alt="" width="45px" height="40px" class="img_icon_lubrificantes">LUBRIFICANTE</a>
           </li>
+           <li class="nav-item li">
+            <a href="#" class="nav-link active fonte"><img src="image/bomba_ícone-removebg-preview.png" alt="" width="45px" height="40px">ADITIVOS</a>
+            </li>
+          <li class="nav-item li">
+              <a href="#" class="nav-link active fonte"><img src="image/cupom.png" alt="" width="45px" height="40px">OFERTAS</a>
+            </li>
         </ul>
         <!-- FIM DOS ITENS/ÍCONES DA NAVBAR -->
       <!-- FIM NAVBAR SECUNDÁRIA -->
@@ -144,14 +158,14 @@
   <!-- INICIO CARROSEL DO FUNDO -->
   <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
-      <div class="carousel-item active" data-bs-interval="1000">
-        <img src="/image/fundo1_slide.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-item active" data-bs-interval="3500">
+        <img src="/image/fundo2-carrosel.jpg" class="d-block w-100" alt="...">
       </div>
       <div class="carousel-item" data-bs-interval="2000">
-        <img src="/image/logo 1.0.png" class="d-block w-100" alt="...">
+        <img src="/image/fundo1-carrosel.jpg" class="d-block w-100" alt="...">
       </div>
       <div class="carousel-item" data-bs-interval="3000">
-        <img src="/image/logo 2.0.png" class="d-block w-100" alt="...">
+        <img src="/image/fundo3-carrosel.jpg" class="d-block w-100" alt="...">
       </div>
     </div>
   </div>
@@ -164,51 +178,51 @@
       <div class="linhas">
         <div class="con-loja">
           <img src="image/pneu1.png" alt="">
-          <p>Pneu jubiscleuson 347652398AB</p>
+          <p class="font-pneus">PNEU<br>347652398AB</p>
           <button class="bi bi-cart3 btn-venda"></button>
         </div>
         <div class="con-loja">
           <img src="image/pneu2.png" alt="">
-          <p>Pneu jubiscleuson 347652398AB</p>
+          <p class="font-pneus">PNEU<br>347652398AB</p>
           <button class="bi bi-cart3 btn-venda"></button>
         </div>
         <div class="con-loja">
           <img src="image/pneu3.png" alt="">
-          <p>Pneu jubiscleuson 347652398AB</p>
+          <p class="font-pneus">PNEU<br>347652398AB</p>
           <button class="bi bi-cart3 btn-venda"></button>
         </div>
       </div>
       <div class="linhas">
         <div class="con-loja">
           <img src="image/pneu4.png" alt="">
-          <p>Pneu jubiscleuson 347652398AB</p>
+          <p class="font-pneus">PNEU<br>347652398AB</p>
           <button class="bi bi-cart3 btn-venda"></button>
         </div>
         <div class="con-loja">
           <img src="image/pneu5.png" alt="">
-          <p>Pneu jubiscleuson 347652398AB</p>
+          <p class="font-pneus">PNEU<br>347652398AB</p>
           <button class="bi bi-cart3 btn-venda"></button>
         </div>
         <div class="con-loja"> 
           <img src="image/pneu6.png" alt="">
-          <p>Pneu jubiscleuson 347652398AB</p>
+          <p class="font-pneus">PNEU<br>347652398AB</p>
           <button class="bi bi-cart3 btn-venda"></button>
         </div>
       </div>
       <div class="linhas">
         <div class="con-loja">
           <img src="image/pneu7.png" alt="">
-          <p>Pneu jubiscleuson 347652398AB</p>
+          <p class="font-pneus">PNEU<br>347652398AB</p>
           <button class="bi bi-cart3 btn-venda"></button>
         </div>
         <div class="con-loja">
           <img src="image/pneu8.png" alt="">
-          <p>Pneu jubiscleuson 347652398AB</p>
+          <p class="font-pneus">PNEU<br>347652398AB</p>
           <button class="bi bi-cart3 btn-venda"></button>
         </div>
         <div class="con-loja">
           <img src="image/pneu9.png" alt="">
-          <p>Pneu jubiscleuson 347652398AB</p>
+          <p class="font-pneus">PNEU<br>347652398AB</p>
           <button class="bi bi-cart3 btn-venda"></button>
         </div>
       </div>
