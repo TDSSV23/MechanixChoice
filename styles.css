@@ -13,9 +13,8 @@ form {
   margin-right: 100px;
 }
 
-.img-logo-central{
-  width: 20%;
-  margin-left: 675px;
+.img-logo-central {
+  margin-right: 60px;
 }
 
 .icone-coracao{
@@ -38,7 +37,7 @@ form {
   display: flex;
   align-items: center;
   background: #040f16;
-  color: #f5f5f5;
+  color: rgb(0, 238, 255);
 }
 
 .btn:hover {
