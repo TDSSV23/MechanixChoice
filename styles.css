@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Braah+One&family=Mooli&family=Sigmar&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 
-.font-pneus{
+.font-loja{
   font-family: 'oswald';
 }
 
@@ -163,6 +163,16 @@ h2 {
   gap: 30px;
 }
 
+.bg-branco {
+  background-color: white;
+  color: black;
+}
+
+.bg-cinza {
+  background-color: rgb(128, 128, 128);
+  color: white;
+}
+
 .toda-flex img {
   width: 350px;
   height: 300px;
@@ -183,10 +193,12 @@ h2 {
   flex-direction: column;
   justify-content: space-around;
   gap: 16px;
-  border: 5px solid gray;
+  border: 5px solid black;
   border-radius: 10px;
   text-align: center;
 }
+
+
 
 .btn-venda {
   background-color: rgb(0, 223, 0);
