@@ -1,14 +1,17 @@
+/* ESTILIZAÇÃO  DO FUNDO DO BODY */
 .fundo_body{
     background-color: rgb(85, 85, 85);
 }
+/* FIM DO FUNDO DO BODY */
 
+/* ESTILIZAÇÃO DO FUNDO DO FORMS */
 .fundo_forms{
-    
     background-color: bisque;
     border: 1px solid;
 }
+/* FIM DA  ESTILIZAÇÃO DO FUNDO DO FORMS */
 
-/* PARTE DA KYARA*/
+/* CODIGO DO FUNDO ATRÁS DA LOGO */
 .container {
     width: 60%;
     height: auto;
@@ -18,14 +21,17 @@
     padding-bottom: .5rem;
     border-radius: 30px;
     padding-left: 40px;
-    
 }
+/* FIM DO CODIGO DO FUNDO ATRÁS DA LOGO */
 
+/* ID DA LOGO DO CADASTRO */
 #logo-cadastro {
     width: 40%;
     height: auto;
-    margin-left: 375px;
+    margin-left: 327px;
 }
+/* FIM DA ID DA LOGO DO FUNDO */
+
 
 .texto {
     text-align: center;
@@ -266,8 +272,4 @@
     flex-grow: 1;
     margin: 0 15px;
     text-align: center;
-}
-
-.centralizado {
-    margin-left: 52px;
 }
