@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Braah+One&family=Mooli&family=Sigmar&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,200;1,400&display=swap');
 .font-loja{
   font-family: 'oswald';
 }
@@ -9,16 +9,12 @@ body {
   transition: background-color .5s;
 }
 
-form {
-  margin-right: 100px;
-}
-
 .img-logo-central {
-  margin-right: 60px;
+  margin-left: 54%;
 }
 
 .icone-coracao{
-  margin-right: 20px;
+  margin-left: 270px;
 }
 
 .icone-carrinho-navbar{
@@ -256,4 +252,28 @@ h2 {
   right: 2rem;
   cursor: pointer;
 
+}
+
+
+
+/* vídeo fundo */
+
+
+
+.video1 {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+}
+
+.p-title2 {
+  font-size: 4rem;
+  color: rgb(0, 174, 255);
+  font-family: 'Kanit', sans-serif;
+}
+
+.p-title {
+  font-size: 4rem;
+  color: rgb(255, 255, 255);
+  font-family: 'Kanit', sans-serif;
 }
