@@ -9,7 +9,7 @@
   <!-- LINK JAVASCRIPT PADRÃO-->
   <script src="script.js"></script>
   <!-- LINK BOOTSTRAP JAVASCRIPT -->
-  <link src="/js/bootstrap.bundle.min.js">
+  <!-- <link src="/js/bootstrap.bundle.min.js"> -->
   <!-- LINK CSS PADRÃO -->
   <link rel="stylesheet" href="styles.css">
   <!-- ÍCONE DA LOGO NA GUIA -->
@@ -18,29 +18,29 @@
   <!-- LINK BOOTSTRAP CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
 
-    <!-- IMPORT ÍCONE MERCADINHO-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <!-- IMPORT ÍCONE MERCADINHO-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
   <!-- LINK BOOTSTRAP CSS -->
-  <link rel="stylesheet" href="./css/bootstrap.css">
+  <!-- <link rel="stylesheet" href="./css/bootstrap.css"> -->
 </head>
 
 <body>
   <!-- NAVBAR PRINCIPAL -->
-  
+
   <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
     <div class="container-fluid">
-      
-    <!-- COMEÇO BUTTON MENU (COM DIV DENTRO DE UMA DIV DO NAVBAR) -->
+
+      <!-- COMEÇO BUTTON MENU (COM DIV DENTRO DE UMA DIV DO NAVBAR) -->
       <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href=""><img src="/image/ícone_casa_sidebar-removebg-preview.png" height="47px" width=60px>HOME</a>
-<!--⚠️ O PROFESSOR MANDOU COMENTAR ISSO POR ENQUANTO, NA PRÓXIMA SPRINT A GENTE ADICIONA DE NOVO⚠️-->
+        <!--⚠️ O PROFESSOR MANDOU COMENTAR ISSO POR ENQUANTO, NA PRÓXIMA SPRINT A GENTE ADICIONA DE NOVO⚠️-->
         <!-- <a href=""><img src="/image/meus-pedidos.png" height="47px" width=60px>PEDIDOS</a> -->
         <!-- <a href="">MINHA GARAGEM</a> -->
         <a href="#footer"><img src="/image/engrenagem.png" height="47px" width=60px>SUPORTE</a>
@@ -50,24 +50,24 @@
         <span style="font-size:30px;cursor:pointer" onclick="openNav()">
           <button class="btn">
             <span class="icon">
-                <svg viewBox="0 0 175 80" width="40" height="40">
-                    <rect width="80" height="15" fill="#f0f0f0" rx="10"></rect>
-                    <rect y="30" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
-                    <rect y="60" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
-                </svg>
+              <svg viewBox="0 0 175 80" width="40" height="40">
+                <rect width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                <rect y="30" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                <rect y="60" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+              </svg>
             </span>
             <span class="text"><img src="/image/ícone_-removebg-preview.2.0.png" width="50px"></span>
           </button>
         </span>
-    </div>
-    <!-- FIM BUTTON MENU-->
-      
-    <!-- LOGO CENTRAL -->
-    <a class="navbar-brand" href="#">
+      </div>
+      <!-- FIM BUTTON MENU-->
+
+      <!-- LOGO CENTRAL -->
+      <a class="navbar-brand" href="#">
         <img src="image/Logo1.0-removebg-preview.png" width="30%" alt="" class="img-logo-central">
       </a>
-    <!-- FIM LOGO CENTRAL -->
-      
+      <!-- FIM LOGO CENTRAL -->
+
       <!-- ÍNICIO DA BARRA DE PESQUISA (FAZER NO DROPPDOWN)-->
       <!-- <form class="d-flex " role="Procurar">
         <input class="form-control me-2" type="search" placeholder="Procurar" aria-label="Procurar">
@@ -79,7 +79,7 @@
         <span class="navbar-toggler-icon"></span>
       </button> -->
       <!-- FIM DA BARRA DE PESQUISA  -->
-      
+
       <!-- ÍCONES NAVBAR PRINCIPAL -->
       <div>
         <img src="/image/coracao-navbar.png" width="40px" height="40px" class="icone-coracao">
@@ -88,27 +88,32 @@
         <img src="/image/carrinho-navbar.png" width="40px" height="40px" class="icone-carrinho-navbar">
       </div>
       <!-- FIM ÍCONES NAVBAR PRINCIPPAL -->
-      
-      
+
+
       <!-- 👇parte do código da barra de pesquisa q deixa quase centralizado👇 -->
       <!-- <div class="collapse navbar-collapse" id="navbarNavDropdown"> -->
       <!-- 👆parte do código da barra de pesquisa q deixa quase centralizado👆 -->
-      
-      </div>
+
+    </div>
     </div>
   </nav>
 
-   
-   <!-- NAVBAR SECUNDÁRIA -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+  <!-- NAVBAR SECUNDÁRIA -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary footer-col">
     <div class="container-fluid nav2 box_externo menu ">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
       <div class="collapse navbar-collapse nav2" id="navbarNavDropdown topo menu corpo rodape">
         <ul class="navbar-nav ul">
-          
+
           <!-- COMEÇO DROPDOWN LINK -->
-          <br><br><br><br><br><br><li class="nav-item dropdown"><br>
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="dropdown-nav2" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
               <img src="image/ícone_primário_site-removebg-preview.png" alt="" width="60px" height="64px">
             </a>
             <ul class="dropdown-menu">
@@ -120,44 +125,55 @@
           </li>
           <!-- FIM DROPDOWN LINK -->
 
-
           <!-- ÍNICIO DOS ITENS/ÍCONES DA NAVBAR -->
           <li class="nav-item li">
-            <a class="nav-link active fonte" aria-current="page" href="#pneu"><img src="image/pneu_caminhão_ícone-removebg-preview.png" alt="" width="40px"
-                height="40px">PNEUS</a>
+            <a class="nav-link active fonte" aria-current="page" href="#pneu"><img
+                src="image/pneu_caminhão_ícone-removebg-preview.png" alt="" width="40px" height="40px">PNEUS</a>
           </li>
           <li class="nav-item li">
-            <a class="nav-link active fonte" href="#eletricidade"><img src="image/ícone raio-amarelo.png" class="img_icon_eletricidade" alt="" width="40px"
-                height="40px">ELETRICIDADE</a>
+            <a class="nav-link active fonte" aria-current="page" href="#eletricidade"><img
+                src="image/ícone raio-amarelo.png" alt="" width="40px" height="40px">ELETRICIDADE</a>
           </li>
           <li class="nav-item li">
-            <a class="nav-link active fonte" href="#som"><img src="image/ícone_som2.0-removebg-preview.png" alt="" width="47px" height="39px" class="img_icon_som">SOM</a>
+            <a class="nav-link active fonte" aria-current="page" href="#som"><img
+                src="image/ícone_som2.0-removebg-preview.png" alt="" width="47px" height="39px"
+                class="img_icon_som">SOM</a>
           </li>
           <li class="nav-item li">
-            <a href="#ferramentas" class="nav-link active fonte"><img src="image/ferramentas_ícone.png" alt="" width="43px" height="41px" class="img_icon_ferramentas">FERRAMENTAS</a>
+            <a href="#ferramentas" class="nav-link active fonte" aria-current="page"><img
+                src="image/ferramentas_ícone.png" alt="" width="43px" height="41px"
+                class="img_icon_ferramentas">FERRAMENTAS</a>
           </li>
           <li class="nav-item li">
-            <a href="#peças" class="nav-link active fonte"><img src="image/ba_ícone-removebg-preview.png" alt="" width="48px" height="40px" class="img_icon_pecas">PEÇAS</a>
+            <a href="#peças" class="nav-link active fonte" aria-current="page"><img
+                src="image/ba_ícone-removebg-preview.png" alt="" width="48px" height="40px"
+                class="img_icon_pecas">PEÇAS</a>
           </li>
           <li class="nav-item li">
-            <a href="#internos" class="nav-link active fonte"><img src="image/volante_ícone-removebg-preview.png" alt="" width="41px" height="40px" class="img_icon_internos">INTERNOS</a>
+            <a href="#internos" class="nav-link active fonte" aria-current="page"><img
+                src="image/volante_ícone-removebg-preview.png" alt="" width="41px" height="40px"
+                class="img_icon_internos">INTERNOS</a>
           </li>
           <li class="nav-item li">
-            <a href="#lubrificante" class="nav-link active fonte"><img src="image/bocal_ícone-removebg-preview.png" alt="" width="45px" height="40px" class="img_icon_lubrificantes">LUBRIFICANTE</a>
+            <a href="#lubrificante" class="nav-link active fonte" aria-current="page"><img
+                src="image/bocal_ícone-removebg-preview.png" alt="" width="45px" height="40px"
+                class="img_icon_lubrificantes">LUBRIFICANTE</a>
           </li>
-           <li class="nav-item li">
-            <a href="#aditivos" class="nav-link active fonte"><img src="image/bomba_ícone-removebg-preview.png" alt="" width="45px" height="40px">ADITIVOS</a>
-            </li>
           <li class="nav-item li">
-              <a href="#ofertas" class="nav-link active fonte"><img src="image/cupom.png" alt="" width="45px" height="40px">OFERTAS</a>
-            </li>
+            <a href="#aditivos" class="nav-link active fonte" aria-current="page"><img
+                src="image/bomba_ícone-removebg-preview.png" alt="" width="45px" height="40px">ADITIVOS</a>
+          </li>
+          <li class="nav-item li">
+            <a href="#ofertas" class="nav-link active fonte" aria-current="page"><img src="image/cupom.png" alt=""
+                width="45px" height="40px">OFERTAS</a>
+          </li>
         </ul>
         <!-- FIM DOS ITENS/ÍCONES DA NAVBAR -->
-      <!-- FIM NAVBAR SECUNDÁRIA -->
+        <!-- FIM NAVBAR SECUNDÁRIA -->
       </div>
     </div>
   </nav>
-  
+
   <!-- INICIO CARROSEL DO FUNDO -->
   <!-- <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
@@ -173,9 +189,9 @@
     </div>
   </div> -->
   <!-- FIM DO CARROESL DO FUNDO -->
-  
-  
-  
+
+
+
   <!-- INICIO VÍDEO FUNDO -->
   <div class="position-relative quebra">
     <video class="video1" src="/image/video_fundo.mp4" autoplay="0" muted loop></video>
@@ -194,452 +210,452 @@
   <!-- ONE PAGE PNEUS-->
   <div class="toda-flex bg-branco">
     <h2 id="pneu">PNEUS</h2>
-      <div class="linhas">
-        <div class="con-loja">
-          <img src="image/pneu1.png" alt="">
-          <p class="font-loja">PNEU<br>347652398AB</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
-        <div class="con-loja">
-          <img src="image/pneu2.png" alt="">
-          <p class="font-loja">PNEU<br>734659720AX</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
-        <div class="con-loja">
-          <img src="image/pneu3.png" alt="">
-          <p class="font-loja">PNEU<br>1243563458XL</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
+    <div class="linhas">
+      <div class="con-loja">
+        <img src="image/pneu1.png" alt="">
+        <p class="font-loja">PNEU<br>347652398AB</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
       </div>
-      <div class="linhas">
-        <div class="con-loja">
-          <img src="image/pneu4.png" alt="">
-          <p class="font-loja">PNEU<br>6364727869BA</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
-        <div class="con-loja">
-          <img src="image/pneu5.png" alt="">
-          <p class="font-loja">PNEU<br>26459579002AB</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
-        <div class="con-loja"> 
-          <img src="image/pneu6.png" alt="">
-          <p class="font-loja">PNEU<br>56737598320-02</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
+      <div class="con-loja">
+        <img src="image/pneu2.png" alt="">
+        <p class="font-loja">PNEU<br>734659720AX</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
       </div>
-      <div class="linhas">
-        <div class="con-loja">
-          <img src="image/pneu7.png" alt="">
-          <p class="font-loja">PNEU<br>2654290198904GG</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
-        <div class="con-loja">
-          <img src="image/pneu8.png" alt="">
-          <p class="font-loja">PNEU<br>2376645872919MN</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
-        <div class="con-loja">
-          <img src="image/pneu9.png" alt="">
-          <p class="font-loja">PNEU<br>2683962986901-01</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
+      <div class="con-loja">
+        <img src="image/pneu3.png" alt="">
+        <p class="font-loja">PNEU<br>1243563458XL</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
       </div>
+    </div>
+    <div class="linhas">
+      <div class="con-loja">
+        <img src="image/pneu4.png" alt="">
+        <p class="font-loja">PNEU<br>6364727869BA</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
+      </div>
+      <div class="con-loja">
+        <img src="image/pneu5.png" alt="">
+        <p class="font-loja">PNEU<br>26459579002AB</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
+      </div>
+      <div class="con-loja">
+        <img src="image/pneu6.png" alt="">
+        <p class="font-loja">PNEU<br>56737598320-02</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
+      </div>
+    </div>
+    <div class="linhas">
+      <div class="con-loja">
+        <img src="image/pneu7.png" alt="">
+        <p class="font-loja">PNEU<br>2654290198904GG</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
+      </div>
+      <div class="con-loja">
+        <img src="image/pneu8.png" alt="">
+        <p class="font-loja">PNEU<br>2376645872919MN</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
+      </div>
+      <div class="con-loja">
+        <img src="image/pneu9.png" alt="">
+        <p class="font-loja">PNEU<br>2683962986901-01</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
+      </div>
+    </div>
   </div>
-<hr>
+  <hr>
   <!-- ONE PAGE ELETRICIDADE-->
   <div class="toda-flex bg-cinza">
     <h2 id="eletricidade">ELETRICIDADE</h2>
-      <div class="linhas">
-        <div class="con-loja">
-          <img src="image/eletrica1.png" alt="">
-          <p class="font-loja">JOGO VELA IGNIÇÃO CELTA & CORSA<br>8V 2005 NGK BR8ES</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
-        <div class="con-loja">
-          <img src="image/eletrica2.png" alt="">
-          <p class="font-loja">JOGO VELA IGNIÇÃO HONDA CITY<br>2008 A 2014 LASER IRIDIUM NGK</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
-        <div class="con-loja">
-          <img src="image/eletrica3.png" alt="">
-          <p class="font-loja">PORTA ESCOVA MOTOR<br>FIAT UNO GRAND SIENA 96 A 2021</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
+    <div class="linhas">
+      <div class="con-loja">
+        <img src="image/eletrica1.png" alt="">
+        <p class="font-loja">JOGO VELA IGNIÇÃO CELTA & CORSA<br>8V 2005 NGK BR8ES</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
       </div>
-      <div class="linhas">
-        <div class="con-loja">
-          <img src="image/eletrica4.png" alt="">
-          <p class="font-loja">ALTERNADOR CHEVROLET S10<br>2.8 2000 A 2012 VALEO</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
-        <div class="con-loja">
-          <img src="image/eletrica5.png" alt="">
-          <p class="font-loja">MOTOR PARTIDA ARRANQUE VW KOMBI<br>PARATI SAVEIRO 12V 9</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
-        <div class="con-loja"> 
-          <img src="image/eletrica6.png" alt="">
-          <p class="font-loja">FAROL 14 LED BIVOLT<br>REDONDO 42W</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
+      <div class="con-loja">
+        <img src="image/eletrica2.png" alt="">
+        <p class="font-loja">JOGO VELA IGNIÇÃO HONDA CITY<br>2008 A 2014 LASER IRIDIUM NGK</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
       </div>
-      <div class="linhas">
-        <div class="con-loja">
-          <img src="image/eletrica7.png" alt="">
-          <p class="font-loja">BENDIX IMPULSIONADOR PALIO CELTA<br>CLIO 85 A 2021 ZEN 0837</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
-        <div class="con-loja">
-          <img src="image/eletrica8.png" alt="">
-          <p class="font-loja">JOGO CABO VELA IGNIÇÃO FIAT UNO<br>STRADA MAGNETI MARELLI CVMT0902</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
-        <div class="con-loja">
-          <img src="image/eletrica9.png" alt="">
-          <p class="font-loja">ROLAMENTO DO ALTERNADOR CHEVROLET<br>CHEVETTE 73 A 93 INA</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
+      <div class="con-loja">
+        <img src="image/eletrica3.png" alt="">
+        <p class="font-loja">PORTA ESCOVA MOTOR<br>FIAT UNO GRAND SIENA 96 A 2021</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
       </div>
+    </div>
+    <div class="linhas">
+      <div class="con-loja">
+        <img src="image/eletrica4.png" alt="">
+        <p class="font-loja">ALTERNADOR CHEVROLET S10<br>2.8 2000 A 2012 VALEO</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
+      </div>
+      <div class="con-loja">
+        <img src="image/eletrica5.png" alt="">
+        <p class="font-loja">MOTOR PARTIDA ARRANQUE VW KOMBI<br>PARATI SAVEIRO 12V 9</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
+      </div>
+      <div class="con-loja">
+        <img src="image/eletrica6.png" alt="">
+        <p class="font-loja">FAROL 14 LED BIVOLT<br>REDONDO 42W</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
+      </div>
+    </div>
+    <div class="linhas">
+      <div class="con-loja">
+        <img src="image/eletrica7.png" alt="">
+        <p class="font-loja">BENDIX IMPULSIONADOR PALIO CELTA<br>CLIO 85 A 2021 ZEN 0837</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
+      </div>
+      <div class="con-loja">
+        <img src="image/eletrica8.png" alt="">
+        <p class="font-loja">JOGO CABO VELA IGNIÇÃO FIAT UNO<br>STRADA MAGNETI MARELLI CVMT0902</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
+      </div>
+      <div class="con-loja">
+        <img src="image/eletrica9.png" alt="">
+        <p class="font-loja">ROLAMENTO DO ALTERNADOR CHEVROLET<br>CHEVETTE 73 A 93 INA</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
+      </div>
+    </div>
   </div>
-<hr>
+  <hr>
   <!-- ONE PAGE SOM-->
   <div class="toda-flex bg-branco">
     <h2 id="som">SOM</h2>
-      <div class="linhas">
-        <div class="con-loja">
-          <img src="image/som1.png" alt="">
-          <p class="font-loja">RÁDIO MP3 PLAYER<br>SP2230BT FM USB</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
-        <div class="con-loja">
-          <img src="image/som2.png" alt="">
-          <p class="font-loja">SUBWOOFER JBL SELENIUM<br>15SWV3.8 VULCANO</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
-        <div class="con-loja">
-          <img src="image/som3.png" alt="">
-          <p class="font-loja">PAR ALTO FALANTE BOMBER BBR<br>TRIAXIAL 6 POLEGADAS 50W</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
+    <div class="linhas">
+      <div class="con-loja">
+        <img src="image/som1.png" alt="">
+        <p class="font-loja">RÁDIO MP3 PLAYER<br>SP2230BT FM USB</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
       </div>
-      <div class="linhas">
-        <div class="con-loja">
-          <img src="image/som4.png" alt="">
-          <p class="font-loja">CORNETA CURTA JBL SELENIUM<br>Hl1450 PROFISIONAL PRETO</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
-        <div class="con-loja">
-          <img src="image/som5.png" alt="">
-          <p class="font-loja">CAIXA DE SOM PORTÁTIL<br>BLUETOOTH WIND2 3W</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
-        <div class="con-loja"> 
-          <img src="image/som6.png" alt="">
-          <p class="font-loja">CENTRAL MULTIMÍDIA TIGER<br>TG0404001 TELA 7" TOUCH MP5</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
+      <div class="con-loja">
+        <img src="image/som2.png" alt="">
+        <p class="font-loja">SUBWOOFER JBL SELENIUM<br>15SWV3.8 VULCANO</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
       </div>
-      <div class="linhas">
-        <div class="con-loja">
-          <img src="image/som7.png" alt="">
-          <p class="font-loja">RÁDIO MP3 PLAYER<br>MVHX3000BR FM USB AUX</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
-        <div class="con-loja">
-          <img src="image/som8.png" alt="">
-          <p class="font-loja">CABO RCA 4mm<br>injetado Azul/Prata 1 Metro</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
-        <div class="con-loja">
-          <img src="image/som9.png" alt="">
-          <p class="font-loja">MÓDULO AMPLIFICADOR HURRICANE<br>2500w RMS 1 CANAL 2 OHMS</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
+      <div class="con-loja">
+        <img src="image/som3.png" alt="">
+        <p class="font-loja">PAR ALTO FALANTE BOMBER BBR<br>TRIAXIAL 6 POLEGADAS 50W</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
       </div>
+    </div>
+    <div class="linhas">
+      <div class="con-loja">
+        <img src="image/som4.png" alt="">
+        <p class="font-loja">CORNETA CURTA JBL SELENIUM<br>Hl1450 PROFISIONAL PRETO</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
+      </div>
+      <div class="con-loja">
+        <img src="image/som5.png" alt="">
+        <p class="font-loja">CAIXA DE SOM PORTÁTIL<br>BLUETOOTH WIND2 3W</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
+      </div>
+      <div class="con-loja">
+        <img src="image/som6.png" alt="">
+        <p class="font-loja">CENTRAL MULTIMÍDIA TIGER<br>TG0404001 TELA 7" TOUCH MP5</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
+      </div>
+    </div>
+    <div class="linhas">
+      <div class="con-loja">
+        <img src="image/som7.png" alt="">
+        <p class="font-loja">RÁDIO MP3 PLAYER<br>MVHX3000BR FM USB AUX</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
+      </div>
+      <div class="con-loja">
+        <img src="image/som8.png" alt="">
+        <p class="font-loja">CABO RCA 4mm<br>injetado Azul/Prata 1 Metro</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
+      </div>
+      <div class="con-loja">
+        <img src="image/som9.png" alt="">
+        <p class="font-loja">MÓDULO AMPLIFICADOR HURRICANE<br>2500w RMS 1 CANAL 2 OHMS</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
+      </div>
+    </div>
   </div>
-<hr>
+  <hr>
   <!-- ONE PAGE FERRAMENTAS-->
   <div class="toda-flex bg-cinza">
     <h2 id="ferramentas">FERRAMENTAS</h2>
-      <div class="linhas">
-        <div class="con-loja">
-          <img src="image/ferramenta1.png" alt="">
-          <p class="font-loja">VERIFICADOR PORCA RODA CHAVE VERDE<br>ZM 3303256</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
-        <div class="con-loja">
-          <img src="image/ferramenta2.png" alt="">
-          <p class="font-loja">FURADEIRA SKILL 10 6604<br>PONTAS E BROCAS V-LINE 83 PEÇAS</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
-        <div class="con-loja">
-          <img src="image/ferramenta3.png" alt="">
-          <p class="font-loja">FURADEIRA GSB 13 RE<br>PONTAS E BROCAS V-LINE 83 PEÇAS</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
+    <div class="linhas">
+      <div class="con-loja">
+        <img src="image/ferramenta1.png" alt="">
+        <p class="font-loja">VERIFICADOR PORCA RODA CHAVE VERDE<br>ZM 3303256</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
       </div>
-      <div class="linhas">
-        <div class="con-loja">
-          <img src="image/ferramenta4.png" alt="">
-          <p class="font-loja">CHAVE DE RODA CAMINHÃO<br>27x30 CH88 CESTARI</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
-        <div class="con-loja">
-          <img src="image/ferramenta5.png" alt="">
-          <p class="font-loja">CHAVE DE RODA COM CABO 400mm<br>32x33 BZ AUTOMOTIVE BZ0610</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
-        <div class="con-loja"> 
-          <img src="image/ferramenta6.png" alt="">
-          <p class="font-loja">CHAVE DE RODA CAMINHÃO<br>32x33 450mm CROMADA CESTARI</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
+      <div class="con-loja">
+        <img src="image/ferramenta2.png" alt="">
+        <p class="font-loja">FURADEIRA SKILL 10 6604<br>PONTAS E BROCAS V-LINE 83 PEÇAS</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
       </div>
-      <div class="linhas">
-        <div class="con-loja">
-          <img src="image/ferramenta7.png" alt="">
-          <p class="font-loja">MINI COMPRESSOR AR 250 PSI<br>ASPIRADOR PORTÁTIL 12V MULTILASER</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
-        <div class="con-loja">
-          <img src="image/ferramenta8.png" alt="">
-          <p class="font-loja">MACACO AUTOMOTIVO JACARÉ HIDRÁULICO<br>2 TONELADAS UNIVERSAL COM MALETA</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
-        <div class="con-loja">
-          <img src="image/ferramenta9.png" alt="">
-          <p class="font-loja">MINI COMPRESSOR DE AR MULTILASER<br>250 PSI 12V (PNEU, BOLA E BICICLETA)</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
+      <div class="con-loja">
+        <img src="image/ferramenta3.png" alt="">
+        <p class="font-loja">FURADEIRA GSB 13 RE<br>PONTAS E BROCAS V-LINE 83 PEÇAS</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
       </div>
+    </div>
+    <div class="linhas">
+      <div class="con-loja">
+        <img src="image/ferramenta4.png" alt="">
+        <p class="font-loja">CHAVE DE RODA CAMINHÃO<br>27x30 CH88 CESTARI</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
+      </div>
+      <div class="con-loja">
+        <img src="image/ferramenta5.png" alt="">
+        <p class="font-loja">CHAVE DE RODA COM CABO 400mm<br>32x33 BZ AUTOMOTIVE BZ0610</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
+      </div>
+      <div class="con-loja">
+        <img src="image/ferramenta6.png" alt="">
+        <p class="font-loja">CHAVE DE RODA CAMINHÃO<br>32x33 450mm CROMADA CESTARI</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
+      </div>
+    </div>
+    <div class="linhas">
+      <div class="con-loja">
+        <img src="image/ferramenta7.png" alt="">
+        <p class="font-loja">MINI COMPRESSOR AR 250 PSI<br>ASPIRADOR PORTÁTIL 12V MULTILASER</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
+      </div>
+      <div class="con-loja">
+        <img src="image/ferramenta8.png" alt="">
+        <p class="font-loja">MACACO AUTOMOTIVO JACARÉ HIDRÁULICO<br>2 TONELADAS UNIVERSAL COM MALETA</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
+      </div>
+      <div class="con-loja">
+        <img src="image/ferramenta9.png" alt="">
+        <p class="font-loja">MINI COMPRESSOR DE AR MULTILASER<br>250 PSI 12V (PNEU, BOLA E BICICLETA)</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
+      </div>
+    </div>
   </div>
-<hr>
+  <hr>
   <!-- ONE PAGE PEÇAS-->
   <div class="toda-flex bg-branco">
     <h2 id="peças">PEÇAS</h2>
-      <div class="linhas">
-        <div class="con-loja">
-          <img src="image/pecas1.png" alt="">
-          <p class="font-loja">PARACHOQUE DIANTEIRO GOL<br>G5 2009 A 2012 PRETO LISO</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
-        <div class="con-loja">
-          <img src="image/pecas2.png" alt="">
-          <p class="font-loja">ENGATE REBOQUE CHEVROLET S10<br>PICK-UP 2012 A 2018 1500KG</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
-        <div class="con-loja">
-          <img src="image/pecas3.png" alt="">
-          <p class="font-loja">ENGATE REBOQUE HILUX SW4<br>2006 A 2017 750KG</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
+    <div class="linhas">
+      <div class="con-loja">
+        <img src="image/pecas1.png" alt="">
+        <p class="font-loja">PARACHOQUE DIANTEIRO GOL<br>G5 2009 A 2012 PRETO LISO</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
       </div>
-      <div class="linhas">
-        <div class="con-loja">
-          <img src="image/pecas4.png" alt="">
-          <p class="font-loja">PAR PALHETA LIMPADOR PARABRISA<br>DIANTEIRO COBALT 2011 A 2018 BOSCH</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
-        <div class="con-loja">
-          <img src="image/pecas5.png" alt="">
-          <p class="font-loja">CAIXA DIREÇÃO HIDRÁULICA FORD<br>ECOSPORT FIESTA 2002 A 2014</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
-        <div class="con-loja"> 
-          <img src="image/pecas6.png" alt="">
-          <p class="font-loja">KIT EMBREAGEM TOYOTA ETIOS<br>1.3 1.5 2013 A 2015 SACHS 3000001340</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
+      <div class="con-loja">
+        <img src="image/pecas2.png" alt="">
+        <p class="font-loja">ENGATE REBOQUE CHEVROLET S10<br>PICK-UP 2012 A 2018 1500KG</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
       </div>
-      <div class="linhas">
-        <div class="con-loja">
-          <img src="image/pecas7.png" alt="">
-          <p class="font-loja">RADIADOR FIAT UNO MILLE<br>94 A 2013 SEM AR VISCONDE</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
-        <div class="con-loja">
-          <img src="image/pecas8.png" alt="">
-          <p class="font-loja">FILTRO ÓLEO NISSAN SENTRA RENAULT<br>MANN-FILTER W6730</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
-        <div class="con-loja">
-          <img src="image/pecas9.png" alt="">
-          <p class="font-loja">FILTRO COMBUSTÍVEL HB20<br>MANN-FILTER</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
+      <div class="con-loja">
+        <img src="image/pecas3.png" alt="">
+        <p class="font-loja">ENGATE REBOQUE HILUX SW4<br>2006 A 2017 750KG</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
       </div>
+    </div>
+    <div class="linhas">
+      <div class="con-loja">
+        <img src="image/pecas4.png" alt="">
+        <p class="font-loja">PAR PALHETA LIMPADOR PARABRISA<br>DIANTEIRO COBALT 2011 A 2018 BOSCH</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
+      </div>
+      <div class="con-loja">
+        <img src="image/pecas5.png" alt="">
+        <p class="font-loja">CAIXA DIREÇÃO HIDRÁULICA FORD<br>ECOSPORT FIESTA 2002 A 2014</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
+      </div>
+      <div class="con-loja">
+        <img src="image/pecas6.png" alt="">
+        <p class="font-loja">KIT EMBREAGEM TOYOTA ETIOS<br>1.3 1.5 2013 A 2015 SACHS 3000001340</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
+      </div>
+    </div>
+    <div class="linhas">
+      <div class="con-loja">
+        <img src="image/pecas7.png" alt="">
+        <p class="font-loja">RADIADOR FIAT UNO MILLE<br>94 A 2013 SEM AR VISCONDE</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
+      </div>
+      <div class="con-loja">
+        <img src="image/pecas8.png" alt="">
+        <p class="font-loja">FILTRO ÓLEO NISSAN SENTRA RENAULT<br>MANN-FILTER W6730</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
+      </div>
+      <div class="con-loja">
+        <img src="image/pecas9.png" alt="">
+        <p class="font-loja">FILTRO COMBUSTÍVEL HB20<br>MANN-FILTER</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
+      </div>
+    </div>
   </div>
-<hr>
+  <hr>
   <!-- ONE PAGE INTERNOS-->
   <div class="toda-flex bg-cinza">
     <h2 id="internos">INTERNOS</h2>
-      <div class="linhas">
-        <div class="con-loja">
-          <img src="image/internos1.png" alt="">
-          <p class="font-loja">MANOPOLA BOLA CÂMBIO FIAT<br>5 MARCHAS PRETO COM ANEL </p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
-        <div class="con-loja">
-          <img src="image/internos2.png" alt="">
-          <p class="font-loja">PROTETOR SOLAR DE PARA-BRISAS 130cm x 60cm <br>PARA CARROS COM ESTAMPA PRAIA</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
-        <div class="con-loja">
-          <img src="image/internos3.png" alt="">
-          <p class="font-loja">CADEIRINHA DE BEBÊ AUTOMÓVEL REGULÁVEL<br>9 A 36KG COM CINTO E PORTA COPO</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
+    <div class="linhas">
+      <div class="con-loja">
+        <img src="image/internos1.png" alt="">
+        <p class="font-loja">MANOPOLA BOLA CÂMBIO FIAT<br>5 MARCHAS PRETO COM ANEL </p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
       </div>
-      <div class="linhas">
-        <div class="con-loja">
-          <img src="image/internos4.png" alt="">
-          <p class="font-loja">ALAVANCA FREIO DE MÃO SAVEIRO 1.8 2.0<br>FINDER 020110</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
-        <div class="con-loja">
-          <img src="image/internos5.png" alt="">
-          <p class="font-loja">ALAVANCA FREIO DE MÃO VW GOL G3<br>SAVEIRO SANTANA COMPLETA KIT & CIA</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
-        <div class="con-loja"> 
-          <img src="image/internos6.png" alt="">
-          <p class="font-loja">JOGO TAPETE PVC JEEP COMPASS<br>FLASH ACESSÓRIOS 4 PEÇAS</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
+      <div class="con-loja">
+        <img src="image/internos2.png" alt="">
+        <p class="font-loja">PROTETOR SOLAR DE PARA-BRISAS 130cm x 60cm <br>PARA CARROS COM ESTAMPA PRAIA</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
       </div>
-      <div class="linhas">
-        <div class="con-loja">
-          <img src="image/internos7.png" alt="">
-          <p class="font-loja">CINTO DE SEGURANÇA TRANSVERSAL<br>MACLEINI 6011</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
-        <div class="con-loja">
-          <img src="image/internos8.png" alt="">
-          <p class="font-loja">VOLANTE ORIGINAL MERCEDES<br>MB1620 PEQUENO 93 A 2011</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
-        <div class="con-loja">
-          <img src="image/internos9.png" alt="">
-          <p class="font-loja">ORGANIZADOR BAGAGEM PORTA MALAS<br>GRANDE UNIVERSAL REESE</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
+      <div class="con-loja">
+        <img src="image/internos3.png" alt="">
+        <p class="font-loja">CADEIRINHA DE BEBÊ AUTOMÓVEL REGULÁVEL<br>9 A 36KG COM CINTO E PORTA COPO</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
       </div>
+    </div>
+    <div class="linhas">
+      <div class="con-loja">
+        <img src="image/internos4.png" alt="">
+        <p class="font-loja">ALAVANCA FREIO DE MÃO SAVEIRO 1.8 2.0<br>FINDER 020110</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
+      </div>
+      <div class="con-loja">
+        <img src="image/internos5.png" alt="">
+        <p class="font-loja">ALAVANCA FREIO DE MÃO VW GOL G3<br>SAVEIRO SANTANA COMPLETA KIT & CIA</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
+      </div>
+      <div class="con-loja">
+        <img src="image/internos6.png" alt="">
+        <p class="font-loja">JOGO TAPETE PVC JEEP COMPASS<br>FLASH ACESSÓRIOS 4 PEÇAS</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
+      </div>
+    </div>
+    <div class="linhas">
+      <div class="con-loja">
+        <img src="image/internos7.png" alt="">
+        <p class="font-loja">CINTO DE SEGURANÇA TRANSVERSAL<br>MACLEINI 6011</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
+      </div>
+      <div class="con-loja">
+        <img src="image/internos8.png" alt="">
+        <p class="font-loja">VOLANTE ORIGINAL MERCEDES<br>MB1620 PEQUENO 93 A 2011</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
+      </div>
+      <div class="con-loja">
+        <img src="image/internos9.png" alt="">
+        <p class="font-loja">ORGANIZADOR BAGAGEM PORTA MALAS<br>GRANDE UNIVERSAL REESE</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
+      </div>
+    </div>
   </div>
-<hr>
+  <hr>
   <!-- ONE PAGE LUBRIFICANTES-->
   <div class="toda-flex bg-branco">
     <h2 id="lubrificante">LUBRIFICANTES</h2>
-      <div class="linhas">
-        <div class="con-loja">
-          <img src="image/lub1.png" alt="">
-          <p class="font-loja">FLUÍDO ÓLEO DE FREIO<br>TRW DOT 4 500ml</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
-        <div class="con-loja">
-          <img src="image/lub2.png" alt="">
-          <p class="font-loja">FLUÍDO ÓLEO DE FREIO<br>NEW PARTS DOT 4 500ml</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
-        <div class="con-loja">
-          <img src="image/lub3.png" alt="">
-          <p class="font-loja">DESENGRIPANTE ANTI FERRUGEM<br>SPRAY CARLUB 300ml</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
+    <div class="linhas">
+      <div class="con-loja">
+        <img src="image/lub1.png" alt="">
+        <p class="font-loja">FLUÍDO ÓLEO DE FREIO<br>TRW DOT 4 500ml</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
       </div>
-      <div class="linhas">
-        <div class="con-loja">
-          <img src="image/lub4.png" alt="">
-          <p class="font-loja">ÓLEO SEMISSINTÉTICO<br>10W40 LUBRAX 1 LITRO</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
-        <div class="con-loja">
-          <img src="image/lub5.png" alt="">
-          <p class="font-loja">4 ÓLEO MINEIRAL 20W50<br>GTX ANTI BORRA CASTROL TOYOTA</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
-        <div class="con-loja"> 
-          <img src="image/lub6.png" alt="">
-          <p class="font-loja">DESENGRIPANTE ANTI FERRUGEM<br>BRIL LUB FIT 300ml</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
+      <div class="con-loja">
+        <img src="image/lub2.png" alt="">
+        <p class="font-loja">FLUÍDO ÓLEO DE FREIO<br>NEW PARTS DOT 4 500ml</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
       </div>
-      <div class="linhas">
-        <div class="con-loja">
-          <img src="image/lub7.png" alt="">
-          <p class="font-loja">DESENGRIPANTE ANTI FERRUGEM<br>TekSpray TK800 300ml</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
-        <div class="con-loja">
-          <img src="image/lub8.png" alt="">
-          <p class="font-loja">2 FLUÍDO ÓLEO DE FREIO<br>ATE DOT 4 LATA 500ml</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
-        <div class="con-loja">
-          <img src="image/lub9.png" alt="">
-          <p class="font-loja">ÓLEO CÂMBIO SINTÉTICO PETRONAS<br>TUTELA MULTI CVT 700 1 LITRO</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
+      <div class="con-loja">
+        <img src="image/lub3.png" alt="">
+        <p class="font-loja">DESENGRIPANTE ANTI FERRUGEM<br>SPRAY CARLUB 300ml</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
       </div>
+    </div>
+    <div class="linhas">
+      <div class="con-loja">
+        <img src="image/lub4.png" alt="">
+        <p class="font-loja">ÓLEO SEMISSINTÉTICO<br>10W40 LUBRAX 1 LITRO</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
+      </div>
+      <div class="con-loja">
+        <img src="image/lub5.png" alt="">
+        <p class="font-loja">4 ÓLEO MINEIRAL 20W50<br>GTX ANTI BORRA CASTROL TOYOTA</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
+      </div>
+      <div class="con-loja">
+        <img src="image/lub6.png" alt="">
+        <p class="font-loja">DESENGRIPANTE ANTI FERRUGEM<br>BRIL LUB FIT 300ml</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
+      </div>
+    </div>
+    <div class="linhas">
+      <div class="con-loja">
+        <img src="image/lub7.png" alt="">
+        <p class="font-loja">DESENGRIPANTE ANTI FERRUGEM<br>TekSpray TK800 300ml</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
+      </div>
+      <div class="con-loja">
+        <img src="image/lub8.png" alt="">
+        <p class="font-loja">2 FLUÍDO ÓLEO DE FREIO<br>ATE DOT 4 LATA 500ml</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
+      </div>
+      <div class="con-loja">
+        <img src="image/lub9.png" alt="">
+        <p class="font-loja">ÓLEO CÂMBIO SINTÉTICO PETRONAS<br>TUTELA MULTI CVT 700 1 LITRO</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
+      </div>
+    </div>
   </div>
-<hr>
+  <hr>
   <!-- ONE PAGE ADITIVOS-->
   <div class="toda-flex bg-cinza">
     <h2 id="aditivos">ADITIVOS</h2>
-      <div class="linhas">
-        <div class="con-loja">
-          <img src="image/aditivos1.png" alt="">
-          <p class="font-loja">ADITIVO RADIADOR 1L ROSA<br>CONCENTRADO PARAFLU 3010</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
-        <div class="con-loja">
-          <img src="image/aditivos2.png" alt="">
-          <p class="font-loja">ADITIVO RADIADOR 1L AMARELO<br>TEC COOL TROPICAL ORGÂNICO</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
-        <div class="con-loja">
-          <img src="image/aditivos3.png" alt="">
-          <p class="font-loja">ÓLEO SINTÉTICO TUTELA MULTI ATF 500<br>DEXRON VI 1L PETRONAS 76149E19BR</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
+    <div class="linhas">
+      <div class="con-loja">
+        <img src="image/aditivos1.png" alt="">
+        <p class="font-loja">ADITIVO RADIADOR 1L ROSA<br>CONCENTRADO PARAFLU 3010</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
       </div>
-      <div class="linhas">
-        <div class="con-loja">
-          <img src="image/aditivos4.png" alt="">
-          <p class="font-loja">ÓLEO SINTÉTICO 15W40 SYNTIUM<br>800 SE 1L PETRONAS 70623E19BR</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
-        <div class="con-loja">
-          <img src="image/aditivos5.png" alt="">
-          <p class="font-loja">ADITIVO RADIADOR 1L VERDE<br>PARAFLU BIO HÍBRIDO</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
-        <div class="con-loja"> 
-          <img src="image/aditivos6.png" alt="">
-          <p class="font-loja">ADITIVO RADIADOR 1L INORGÂNICO<br>VERDE CONCENTRADO PARAFLU 10-3007</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
+      <div class="con-loja">
+        <img src="image/aditivos2.png" alt="">
+        <p class="font-loja">ADITIVO RADIADOR 1L AMARELO<br>TEC COOL TROPICAL ORGÂNICO</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
       </div>
-      <div class="linhas">
-        <div class="con-loja">
-          <img src="image/aditivos7.png" alt="">
-          <p class="font-loja">ADITIVO RADIADOR 1L AMARELO<br>BIO ORGÂNICO PARAFLU</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
-        <div class="con-loja">
-          <img src="image/aditivos8.png" alt="">
-          <p class="font-loja">ADITIVO RADIADOR 1L ROSA<br>ANTICORROSIVO PRONTO PARA USO</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
-        <div class="con-loja">
-          <img src="image/aditivos9.png" alt="">
-          <p class="font-loja">CONDICIONADO SINTÉTICO DE METAIS<br>MILITEC-1 40ml</p>
-          <!-- <button class="bi bi-cart3 btn-venda"></button> -->
-        </div>
+      <div class="con-loja">
+        <img src="image/aditivos3.png" alt="">
+        <p class="font-loja">ÓLEO SINTÉTICO TUTELA MULTI ATF 500<br>DEXRON VI 1L PETRONAS 76149E19BR</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
       </div>
+    </div>
+    <div class="linhas">
+      <div class="con-loja">
+        <img src="image/aditivos4.png" alt="">
+        <p class="font-loja">ÓLEO SINTÉTICO 15W40 SYNTIUM<br>800 SE 1L PETRONAS 70623E19BR</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
+      </div>
+      <div class="con-loja">
+        <img src="image/aditivos5.png" alt="">
+        <p class="font-loja">ADITIVO RADIADOR 1L VERDE<br>PARAFLU BIO HÍBRIDO</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
+      </div>
+      <div class="con-loja">
+        <img src="image/aditivos6.png" alt="">
+        <p class="font-loja">ADITIVO RADIADOR 1L INORGÂNICO<br>VERDE CONCENTRADO PARAFLU 10-3007</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
+      </div>
+    </div>
+    <div class="linhas">
+      <div class="con-loja">
+        <img src="image/aditivos7.png" alt="">
+        <p class="font-loja">ADITIVO RADIADOR 1L AMARELO<br>BIO ORGÂNICO PARAFLU</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
+      </div>
+      <div class="con-loja">
+        <img src="image/aditivos8.png" alt="">
+        <p class="font-loja">ADITIVO RADIADOR 1L ROSA<br>ANTICORROSIVO PRONTO PARA USO</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
+      </div>
+      <div class="con-loja">
+        <img src="image/aditivos9.png" alt="">
+        <p class="font-loja">CONDICIONADO SINTÉTICO DE METAIS<br>MILITEC-1 40ml</p>
+        <!-- <button class="bi bi-cart3 btn-venda"></button> -->
+      </div>
+    </div>
   </div>
-<!-- FIM ONE PAGE -->
-<!-- FOOTER DO SITE-->  
+  <!-- FIM ONE PAGE -->
+  <!-- FOOTER DO SITE-->
   <footer id="footer" class="text-center text-lg-start text-white" style="background-color: #1c2331">
     <!-- REDES SOCIAIS -->
     <section class="d-flex justify-content-between p-4" style="background-color: #0f0e28">
@@ -711,17 +727,18 @@
       © 2023 Copyright
     </div>
   </footer>
-<!-- FIM DO FOOTER -->
-  
+  <!-- FIM DO FOOTER -->
 
-<!-- BOTÃO QUE VAI PRO ÍNICIO -->
-<a href="#">
+
+  <!-- BOTÃO QUE VAI PRO ÍNICIO -->
+  <a href="#">
     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="blue"
-        class="bi bi-arrow-up-circle-fill position-fixed mb-0 ms-0" viewBox="0 0 16 16">
-        <path
-            d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
+      class="bi bi-arrow-up-circle-fill position-fixed mb-0 ms-0" viewBox="0 0 16 16">
+      <path
+        d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
     </svg>
-</a>
-<!-- FIM DO BOTÃO  -->
+  </a>
+  <!-- FIM DO BOTÃO  -->
 </body>
+
 </html>

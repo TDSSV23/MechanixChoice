@@ -106,7 +106,7 @@ body {
 
 .li {
   float: left;
-  padding: 20px 30px;
+  padding: 20px 20px;
 }
 
 .li:hover {
@@ -262,8 +262,9 @@ h2 {
 
 .video1 {
   height: 100vh;
-  width: 100vw;
+  width: 98.7vw;
   object-fit: cover;
+  padding-bottom: 50px;
 }
 
 .p-title2 {
@@ -277,3 +278,16 @@ h2 {
   color: rgb(255, 255, 255);
   font-family: 'Kanit', sans-serif;
 }
+
+/* @media (max-width: 800px) {
+  .footer-col {
+      width: 50%;
+      margin-bottom: 30px;
+  }
+}
+
+@media (max-width:600px) {
+  .footer-col {
+      width: 100%;
+  }
+} */
