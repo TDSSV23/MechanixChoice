@@ -63,29 +63,26 @@
       <!-- FIM BUTTON MENU-->
 
       <!-- LOGO CENTRAL -->
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand d-flex justify-content-center" href="#">
         <img src="image/Logo1.0-removebg-preview.png" width="30%" alt="" class="img-logo-central">
       </a>
       <!-- FIM LOGO CENTRAL -->
 
-      <!-- ÍNICIO DA BARRA DE PESQUISA (FAZER NO DROPPDOWN)-->
-      <!-- <form class="d-flex " role="Procurar">
-        <input class="form-control me-2" type="search" placeholder="Procurar" aria-label="Procurar">
-        <button class="btn btn-outline-success" type="submit">Procurar</button>
-      </form>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button> -->
-      <!-- FIM DA BARRA DE PESQUISA  -->
 
       <!-- ÍCONES NAVBAR PRINCIPAL -->
-      <div>
-        <img src="/image/icon_favoritos.png" width="30px" height="30px" class="icone-coracao">
-      </div>
-      <div>
-        <img src="/image/icon_pedidos.png" width="40px" height="40px" class="icone-carrinho-navbar">
+      <div class="d-flex justify-content-between align-items-center">
+        <a href="#" class="user-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+          </svg>
+        </a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#" class="user-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-bag-check-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zm-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+          </svg>
+        </a>
       </div>
       <!-- FIM ÍCONES NAVBAR PRINCIPPAL -->
 
@@ -116,13 +113,13 @@
               aria-expanded="false">
               <img src="image/ícone_primário_site-removebg-preview.png" alt="" width="60px" height="64px">
             </a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu" aria-labelledby="dropdown-nav2">
               <li><a class="dropdown-item" href="#">MEGA OFERTAS</a></li>
               <li><a class="dropdown-item" href="#">FARÓIS</a></li>
               <li><a class="dropdown-item" href="#">MOTOCICLETAS</a></li>
               <li><a class="dropdown-item" href="#">ACESSÓRIOS EXTERNOS</a></li>
             </ul>
-          </li>
+          </li>          
           <!-- FIM DROPDOWN LINK -->
 
           <!-- ÍNICIO DOS ITENS/ÍCONES DA NAVBAR -->

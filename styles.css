@@ -1,6 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Braah+One&family=Mooli&family=Sigmar&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,200;1,400&display=swap');
+
+  /* Estilos para tornar as imagens responsivas */
+  .icone-carrinho-navbar {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Estilos para centralizar as imagens horizontalmente */
+  div {
+    text-align: center;
+  }
+
+  /* Estilos para adicionar algum espaço entre as imagens */
+  div + div {
+    margin-top: 10px;
+  }
+
+  .icone-coracao {
+    max-width: 100%;
+    height: auto;
+  }
+
+
 .font-loja{
   font-family: 'oswald';
 }
@@ -10,7 +33,7 @@ body {
 }
 
 .img-logo-central {
-  margin-left: 54%;
+  margin-left: 2%;
 }
 
 .icone-coracao{
