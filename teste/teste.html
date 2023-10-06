@@ -1,19 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/teste/teste.css">
+    <!-- Certifique-se de incluir a biblioteca Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <title>Popup</title>
 </head>
 <body>
-  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-fill" viewBox="0 0 16 16">
-    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5z"/>
-  </svg>
-  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 18">
-    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-    <path fill-rule="evenodd"
-      d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
-  </svg>
+    <button id="openButton">Abrir Pop-up</button>
+
+    <div class="popup" id="popup">
+        <div class="container">
+            <!-- Remova os IDs duplicados aqui -->
+            <div class="form-container sign-up-container">
+                <form action="#">
+                    <h1>Criar Conta</h1>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <span>ou use seu e-mail para registro</span>
+                    <input type="text" placeholder="Nome" />
+                    <input type="email" placeholder="E-mail" />
+                    <input type="password" placeholder="Senha" />
+                    <button>Cadastrar</button>
+                </form>
+            </div>
+            <div class="form-container sign-in-container">
+                <form action="#">
+                    <h1>Entrar</h1>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <span>ou use sua conta</span>
+                    <input type="email" placeholder="E-mail" />
+                    <input type="password" placeholder="Senha" />
+                    <a href="#">Esqueceu sua senha?</a>
+                    <button>Entrar</button>
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1>Bem-vindo de volta!</h1>
+                        <p>Para continuar conectado conosco, faça login com suas informações pessoais</p>
+                        <button class="ghost" id="signIn">Entrar</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1>Olá, Amigo!</h1>
+                        <p>Insira seus dados pessoais e comece sua jornada conosco</p>
+                        <a class="ghost" id="signUp" href="cadastro.html">Cadastrar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button id="closeButton">Fechar</button>
+
+    <script src="/teste/teste.js"></script>
 </body>
 </html>

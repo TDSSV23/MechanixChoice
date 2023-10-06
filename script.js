@@ -1,12 +1,4 @@
 // INICIO BUTTON SIDEBAR
-
-// OPACIDADE AO CLICAR NO BUTTON
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-  }
-// FIM DO EFEITO DE OPACIDADE NO BUTTON
  
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
@@ -34,4 +26,18 @@ window.addEventListener("click", function(event) {
   if (event.target == modal) {
     closeModal();
   }
+});
+
+// poup-up login
+
+const openButton = document.getElementById("openButton");
+const closeButton = document.getElementById("closeButton");
+const popup = document.getElementById("popup");
+
+openButton.addEventListener("click", () => {
+    popup.style.display = "block";
+});
+
+closeButton.addEventListener("click", () => {
+    popup.style.display = "none";
 });

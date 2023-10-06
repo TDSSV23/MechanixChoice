@@ -8,8 +8,6 @@
 
   <!-- LINK JAVASCRIPT PADRÃO-->
   <script src="script.js"></script>
-  <!-- LINK BOOTSTRAP JAVASCRIPT -->
-  <!-- <link src="/js/bootstrap.bundle.min.js"> -->
   <!-- LINK CSS PADRÃO -->
   <link rel="stylesheet" href="styles.css">
   <!-- ÍCONE DA LOGO NA GUIA -->
@@ -34,63 +32,66 @@
   <!-- NAVBAR PRINCIPAL -->
 
   <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
-    <div class="container-fluid">
-
-      <!-- COMEÇO BUTTON MENU (COM DIV DENTRO DE UMA DIV DO NAVBAR) -->
-      <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href=""><img src="/image/ícone_casa_sidebar-removebg-preview.png" height="47px" width=60px>HOME</a>
-        <!--⚠️ O PROFESSOR MANDOU COMENTAR ISSO POR ENQUANTO, NA PRÓXIMA SPRINT A GENTE ADICIONA DE NOVO⚠️-->
-        <!-- <a href=""><img src="/image/meus-pedidos.png" height="47px" width=60px>PEDIDOS</a> -->
-        <!-- <a href="">MINHA GARAGEM</a> -->
-        <a href="#footer"><img src="/image/engrenagem.png" height="47px" width=60px>SUPORTE</a>
-      </div>
-
-      <div>
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">
-          <button class="btn">
-            <span class="icon">
-              <svg viewBox="0 0 175 80" width="40" height="40">
-                <rect width="80" height="15" fill="#f0f0f0" rx="10"></rect>
-                <rect y="30" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
-                <rect y="60" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
-              </svg>
-            </span>
-            <span class="text"><img src="/image/ícone_-removebg-preview.2.0.png" width="50px"></span>
-          </button>
-        </span>
-      </div>
-      <!-- FIM BUTTON MENU-->
-
       <!-- LOGO CENTRAL -->
       <a class="navbar-brand d-flex justify-content-center" href="#">
         <img src="image/Logo1.0-removebg-preview.png" width="30%" alt="" class="img-logo-central">
       </a>
       <!-- FIM LOGO CENTRAL -->
 
+      <button id="openButton">Abrir Pop-up</button>
 
-
-      <!-- ÍCONES NAVBAR PRINCIPAL -->
-      <div class="d-flex justify-content-between align-items-center">
-        <a href="#" class="user-icon">
-        
-          <!-- ÍNICIO DA LINKAGEM DO LOGIN E ICON DE LOGIN -->
-          <div class="d-flex justify-content-between align-items-center">
-            <a href="login.html"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-              <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-            </svg></a>
-        <!-- FIM DA LINKAGEM DO LOGIN E ICON DE LOGIN -->
-        
-      </a>&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="#" class="user-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-bag-check-fill" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zm-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
-          </svg>
-        </a>
-      </div>
-      <!-- FIM ÍCONES NAVBAR PRINCIPPAL -->
-
+    <div class="popup" id="popup">
+        <div class="container">
+            <!-- Remova os IDs duplicados aqui -->
+            <div class="form-container sign-up-container">
+                <form action="#">
+                    <h1>Criar Conta</h1>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <span>ou use seu e-mail para registro</span>
+                    <input type="text" placeholder="Nome" />
+                    <input type="email" placeholder="E-mail" />
+                    <input type="password" placeholder="Senha" />
+                    <button>Cadastrar</button>
+                </form>
+            </div>
+            <div class="form-container sign-in-container">
+                <form action="#">
+                    <h1>Entrar</h1>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <span>ou use sua conta</span>
+                    <input type="email" placeholder="E-mail" />
+                    <input type="password" placeholder="Senha" />
+                    <a href="#">Esqueceu sua senha?</a>
+                    <button>Entrar</button>
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1>Bem-vindo de volta!</h1>
+                        <p>Para continuar conectado conosco, faça login com suas informações pessoais</p>
+                        <button class="ghost" id="signIn">Entrar</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1>Olá, Amigo!</h1>
+                        <p>Insira seus dados pessoais e comece sua jornada conosco</p>
+                        <a class="ghost" id="signUp" href="cadastro.html">Cadastrar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button id="closeButton">Fechar</button>
+    
+</div>
 
       <!-- 👇parte do código da barra de pesquisa q deixa quase centralizado👇 -->
       <!-- <div class="collapse navbar-collapse" id="navbarNavDropdown"> -->
