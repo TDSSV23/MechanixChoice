@@ -1,67 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/teste/teste.css">
-    <!-- Certifique-se de incluir a biblioteca Font Awesome -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <title>Popup</title>
 </head>
 <body>
-    <button id="openButton">Abrir Pop-up</button>
-
-    <div class="popup" id="popup">
-        <div class="container">
-            <!-- Remova os IDs duplicados aqui -->
-            <div class="form-container sign-up-container">
-                <form action="#">
-                    <h1>Criar Conta</h1>
-                    <div class="social-container">
-                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+    <div id="app" class="popup">
+        <div class="popup-content">
+            <div class="close-button" @click="closePopup">&times;</div>
+            <div v-if="signUp">
+                <div class="formArea">
+                    <h2>Sign in to Remat</h2>
+                    <h6>Fill in the required fields</h6>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your email">
                     </div>
-                    <span>ou use seu e-mail para registro</span>
-                    <input type="text" placeholder="Nome" />
-                    <input type="email" placeholder="E-mail" />
-                    <input type="password" placeholder="Senha" />
-                    <button>Cadastrar</button>
-                </form>
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <button class="btn">Sign up</button>
+                </div>
             </div>
-            <div class="form-container sign-in-container">
-                <form action="#">
-                    <h1>Entrar</h1>
-                    <div class="social-container">
-                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+            <div v-else>
+                <div class="formArea">
+                    <h2>Create an account</h2>
+                    <h6>Fill in the required fields</h6>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="exampleInputName1" placeholder="Name">
                     </div>
-                    <span>ou use sua conta</span>
-                    <input type="email" placeholder="E-mail" />
-                    <input type="password" placeholder="Senha" />
-                    <a href="#">Esqueceu sua senha?</a>
-                    <button>Entrar</button>
-                </form>
-            </div>
-            <div class="overlay-container">
-                <div class="overlay">
-                    <div class="overlay-panel overlay-left">
-                        <h1>Bem-vindo de volta!</h1>
-                        <p>Para continuar conectado conosco, faça login com suas informações pessoais</p>
-                        <button class="ghost" id="signIn">Entrar</button>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your email">
                     </div>
-                    <div class="overlay-panel overlay-right">
-                        <h1>Olá, Amigo!</h1>
-                        <p>Insira seus dados pessoais e comece sua jornada conosco</p>
-                        <a class="ghost" id="signUp" href="cadastro.html">Cadastrar</a>
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                     </div>
+                    <button class="btn">Sign in</button>
                 </div>
             </div>
         </div>
     </div>
-    <button id="closeButton">Fechar</button>
-
-    <script src="/teste/teste.js"></script>
+    <button @click="togglePopup" class="open-popup-button">Open Popup</button>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                signUp: true
+            },
+            methods: {
+                togglePopup: function () {
+                    this.signUp = !this.signUp;
+                    this.$el.style.display = 'block';
+                },
+                closePopup: function () {
+                    this.$el.style.display = 'none';
+                }
+            }
+        });
+    </script>
 </body>
 </html>
