@@ -38,60 +38,29 @@
       </a>
       <!-- FIM LOGO CENTRAL -->
 
-      <button id="openButton">Abrir Pop-up</button>
-
-    <div class="popup" id="popup">
-        <div class="container">
-            <!-- Remova os IDs duplicados aqui -->
-            <div class="form-container sign-up-container">
-                <form action="#">
-                    <h1>Criar Conta</h1>
-                    <div class="social-container">
-                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                    <span>ou use seu e-mail para registro</span>
-                    <input type="text" placeholder="Nome" />
-                    <input type="email" placeholder="E-mail" />
-                    <input type="password" placeholder="Senha" />
-                    <button>Cadastrar</button>
-                </form>
-            </div>
-            <div class="form-container sign-in-container">
-                <form action="#">
-                    <h1>Entrar</h1>
-                    <div class="social-container">
-                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                    <span>ou use sua conta</span>
-                    <input type="email" placeholder="E-mail" />
-                    <input type="password" placeholder="Senha" />
-                    <a href="#">Esqueceu sua senha?</a>
-                    <button>Entrar</button>
-                </form>
-            </div>
-            <div class="overlay-container">
-                <div class="overlay">
-                    <div class="overlay-panel overlay-left">
-                        <h1>Bem-vindo de volta!</h1>
-                        <p>Para continuar conectado conosco, faça login com suas informações pessoais</p>
-                        <button class="ghost" id="signIn">Entrar</button>
-                    </div>
-                    <div class="overlay-panel overlay-right">
-                        <h1>Olá, Amigo!</h1>
-                        <p>Insira seus dados pessoais e comece sua jornada conosco</p>
-                        <a class="ghost" id="signUp" href="cadastro.html">Cadastrar</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <button id="closeButton">Fechar</button>
-    
+      <!-- Button trigger modal -->
+<!-- Button trigger modal -->
+<div type="button" class="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <img src="/image/Contato.png" width="15%" height="15%" class="icon-btn">
 </div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg ">
+    <div class="modal-content" >
+
+        <a type="button" class="position-absolute text-decoration-none ms-3 fs-2" data-bs-dismiss="modal" aria-label="Close" style="color: #0f0e28;">x</a>
+
+        <iframe src="./login.html" frameborder="0" class="iframe-login" ></iframe>
+      </div>
+
+    </div>
+  </div>
+
+    
+
 
       <!-- 👇parte do código da barra de pesquisa q deixa quase centralizado👇 -->
       <!-- <div class="collapse navbar-collapse" id="navbarNavDropdown"> -->

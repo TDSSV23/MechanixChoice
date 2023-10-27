@@ -30,14 +30,9 @@ window.addEventListener("click", function(event) {
 
 // poup-up login
 
-const openButton = document.getElementById("openButton");
-const closeButton = document.getElementById("closeButton");
-const popup = document.getElementById("popup");
+const myModal = document.getElementById('myModal')
+const myInput = document.getElementById('myInput')
 
-openButton.addEventListener("click", () => {
-    popup.style.display = "block";
-});
-
-closeButton.addEventListener("click", () => {
-    popup.style.display = "none";
-});
+myModal.addEventListener('shown.bs.modal', () => {
+  myInput.focus()
+})
