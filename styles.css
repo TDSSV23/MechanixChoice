@@ -84,8 +84,8 @@ body {
 /* Estilo para ajustar o tamanho do logotipo central */
 .img-logo-central {
   height: 100%;
-  width: 30%;
-  margin-left: -50%;
+  width: 75%;
+  margin-left: -0%;
   max-height: 100%; /* Defina a altura máxima do logotipo */
 }
 
@@ -93,13 +93,6 @@ body {
 .icon-btn {
   width: 30px; /* Defina a largura desejada para o ícone de Contato */
   height: 30px; /* Defina a altura desejada para o ícone de Contato */
-}
-
-/* Estilo para ajustar o tamanho do input de pesquisa */
-.searchBar {
-  margin-left: -75%;
-  width: 100px; /* Defina a largura desejada para o input de pesquisa */
-  margin-top: -1px; /* Ajuste a margem superior para posicionar mais para cima */
 }
 
 /* Estilo para ajustar o tamanho do botão de pesquisa */
@@ -232,7 +225,7 @@ h2 {
   height: 75vh;
   width: 98.7vw;
   object-fit: cover;
-  padding-bottom: 50px;
+  padding-bottom: 0;
 }
 
 .p-title2 {
@@ -243,6 +236,7 @@ h2 {
 
 .p-title {
   font-size: 4rem;
+  margin-top: -110px;
   color: rgb(255, 255, 255);
   font-family: 'Kanit', sans-serif;
 }
@@ -365,11 +359,11 @@ body {
 }
 
 .searchBar {
-  width: 100%;
+  width: 115%;
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-left: -50%;
+  margin-left: -3%;
 }
 
 #searchQueryInput {
@@ -407,5 +401,45 @@ body {
 .svg-navbar {
   width: 50px; /* Defina a largura desejada para todas as imagens SVG */
   height: 50px; /* Defina a altura desejada para todas as imagens SVG */
-  margin-top: -10px;
+  margin-left: 6rem;
+  margin-top: -3px;
   }
+
+  .svg-navbar-c {
+    width: 40px; /* Defina a largura desejada para todas as imagens SVG */
+    height: 40px; /* Defina a altura desejada para todas as imagens SVG */
+    margin-left: 4rem;
+    margin-top: 15px;
+    }
+
+    .svg-navbar-cc {
+      width: 40px; /* Defina a largura desejada para todas as imagens SVG */
+      height: 40px; /* Defina a altura desejada para todas as imagens SVG */
+      margin-left: 2rem;
+      margin-right: 2rem;
+      margin-top: 8px;
+      }
+
+/* teste pra tab */
+      /* #video-container {
+        position: relative;
+      }
+      
+      video {
+        width: 100%;
+      }
+      
+      #tab-container {
+        position: absolute;
+        top: 5; 
+        left: 10px;
+        list-style: none;
+      }
+      
+      .tab {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #333;
+        color: #fff;
+        cursor: pointer;
+      } */
