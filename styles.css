@@ -1,13 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Braah+One&family=Mooli&family=Sigmar&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,200;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,200;1,400&display=swap'); @import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@500&display=swap');
 
-
-/* Estilos para tornar as imagens responsivas */
-  .icone-carrinho-navbar {
-    max-width: 100%;
-    height: auto;
-  }
   
   /* Estilos para centralizar as imagens horizontalmente */
   div {
@@ -19,31 +13,15 @@
     margin-top: 10px;
   }
 
-  .icone-coracao {
-    max-width: 100%;
-    height: auto;
-  }
-
-
 .font-loja{
   font-family: 'oswald';
 }
 
 body {
+  overflow-x: hidden;
   transition: background-color .5s;
 }
 
-.img-logo-central {
-  margin-left: -55%;
-}
-
-.icone-coracao{
-  margin-left: 270px;
-}
-
-.icone-carrinho-navbar{
-  margin-right: 20px;
-}
 
 .btn {
   width: 150px;
@@ -95,11 +73,56 @@ body {
   transform: scale(0.85);
 }
 
-.alinhamento {
-  vertical-align: middle;
+
+/* navbar principal */
+.navbar {
+  position: fixed;
+  height: 80px; /* Defina a altura desejada */
+  padding: 0 0px; /* Adicione espaçamento interno desejado */
 }
 
+/* Estilo para ajustar o tamanho do logotipo central */
+.img-logo-central {
+  height: 100%;
+  width: 30%;
+  margin-left: -50%;
+  max-height: 100%; /* Defina a altura máxima do logotipo */
+}
+
+/* Estilo para ajustar o tamanho do ícone de Contato */
+.icon-btn {
+  width: 30px; /* Defina a largura desejada para o ícone de Contato */
+  height: 30px; /* Defina a altura desejada para o ícone de Contato */
+}
+
+/* Estilo para ajustar o tamanho do input de pesquisa */
+.searchBar {
+  margin-left: -75%;
+  width: 100px; /* Defina a largura desejada para o input de pesquisa */
+  margin-top: -1px; /* Ajuste a margem superior para posicionar mais para cima */
+}
+
+/* Estilo para ajustar o tamanho do botão de pesquisa */
+#searchQuerySubmit {
+  width: 80px; /* Defina a largura desejada para o botão de pesquisa */
+  height: 40px; /* Defina a altura desejada para o botão de pesquisa */
+}
+
+/* Estilo para ajustar o tamanho do modal */
+.modal-dialog {
+  max-width: 90%; /* Defina a largura máxima desejada para o modal */
+}
+
+/* Estilo para ajustar o tamanho do iframe dentro do modal */
+.iframe-login {
+  width: 100%; /* Preencher o tamanho do iframe no modal */
+  height: 500px; /* Defina a altura desejada para o iframe */
+}
+
+
+
 .nav2 {
+  margin-top: -1px;
   * {
     margin: 0;
     padding: 0
@@ -109,7 +132,6 @@ body {
 .box_externo {
   width: 1000px;
   height: 800px;
-  margin: 0 auto
 }
 
 .topo {
@@ -118,8 +140,7 @@ body {
 }
 
 .menu {
-  height: 97px;
-  border: 1px solid #CCC;
+  height: 70px;
   background-color: rgb(255, 255, 255);
   overflow: hidden;
 }
@@ -148,29 +169,6 @@ body {
   height: 50px
 }
 
-.img_icon_eletricidade {
-  margin-left: 30px;
-}
-
-.img_icon_som {
-  margin-left: auto;
-}
-
-.img_icon_ferramentas {
-  margin-left: 27px;
-}
-
-.img_icon_pecas {
-  margin-left: auto;
-}
-
-.img_icon_internos {
-  margin-left: 15px;
-}
-
-.img_icon_lubrificantes {
-  margin-left: 17px;
-}
 h2 {
   text-align: center;
 }
@@ -270,21 +268,6 @@ h2 {
   fill: rgb(255, 60, 0); /* Laranja mais escuro */
 }
 
-
-/* styles.css */
-.popup {
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: white;
-  width: 400px;
-  padding: 20px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  z-index: 999;
-}
-
 /* poupup inicio */
 
 .iframe-login{
@@ -295,10 +278,134 @@ h2 {
   color: black;
 }
 
+.modal-content{
+  background-color: transparent;
+  border: transparent;
+}
+
 /* fim poupup */
 
 /* icon-btn */
 
 .icon-btn {
-  margin-left: 170%;
+  height: 30px;
+  width: 30px;
+  margin-left: -600%;
 }
+
+/* tab */
+
+.html {
+  background-color: #ccc;
+  /*background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACVBMVEUAAAAAAAAAAACDY+nAAAAAA3RSTlMmDQBzGIDBAAAAG0lEQVR42uXIIQEAAADCMHj/0NdkQMws0HEeAqvwAUGJthrXAAAAAElFTkSuQmCC);*/
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tabList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.tabList a {
+  display: block;
+  float: left;
+  border: 1px solid #000;
+  padding: .25em 2em;
+  margin: 0 0 -1px .25em;
+  border-radius: .5em .5em 0 0;
+  background-color: #aaa;
+}
+
+.tabList a:link, .tabList a:visited, .tabList a:hover, .tabList a:focus, .tabList a:active {
+  text-decoration: none;
+  color: #000;
+}
+
+.tabList a:hover, .tabList a:focus {
+  background-color: #ccc;
+}
+
+.tabList a.selected {
+  background-color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.tabPanels div {
+  clear: left;
+  margin: 0 auto;
+  padding: 1em 2em;
+  border: 1px solid #000;
+  border-radius: .25em;
+  background-color: #fff;
+  display: none;
+}
+
+.tabPanels div.selected, div[aria-hidden=false] {
+  display: block;
+}
+
+.hide, div[aria-hidden=true] {
+  display: none;
+}
+
+/* barra de pesquisa */
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 31.25rem;
+  margin: 6rem auto;
+}
+
+.searchBar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: -50%;
+}
+
+#searchQueryInput {
+  width: 100%;
+  height: 2.8rem;
+  background: #f5f5f5;
+  outline: none;
+  border: none;
+  border-radius: 1.625rem;
+  padding: 0 3.5rem 0 1.5rem;
+  font-size: 1rem;
+}
+
+#searchQuerySubmit {
+  width: 3.5rem;
+  height: 2.8rem;
+  margin-left: -3.5rem;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+#searchQuerySubmit:hover {
+  cursor: pointer;
+}
+
+/* texto dos icons da navbar1 */
+.cor-icon {
+  font-family: 'Playpen Sans';
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.svg-navbar {
+  width: 50px; /* Defina a largura desejada para todas as imagens SVG */
+  height: 50px; /* Defina a altura desejada para todas as imagens SVG */
+  margin-top: -10px;
+  }

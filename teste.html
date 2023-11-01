@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="teste.css">
+    <script src="teste.js"></script>
+</head>
+<body>
+      
+      <ul class="tabList" id="tabs" role="tablist">
+        <li role="presentation"><a id="tab1" href="#panel1" onclick="showTab(1);return false;" role="tab" aria-controls="panel1" aria-selected="false">Tab 1</a></li>
+        <li role="presentation"><a id="tab2" href="#panel2" onclick="showTab(2);return false;" role="tab" aria-controls="panel2" aria-selected="false">Tab 2</a></li>
+        <li role="presentation"><a id="tab3" href="#panel3" onclick="showTab(3);return false;" role="tab" aria-controls="panel3" aria-selected="false">Tab 3</a></li>
+        <li role="presentation"><a id="tab4" href="#panel4" onclick="showTab(4);return false;" role="tab" aria-controls="panel4" aria-selected="false">Tab 4</a></li>
+      </ul>
+      
+      <div class="tabPanels">
+        <div id="panel1" role="tabpanel" aria-labelledby="tab1">
+        <p>
+          Nulla tincidunt pharetra tortor. In dapibus ultricies arcu. Suspendisse at purus eu est tincidunt feugiat. Praesent <a href="foo">et sapien></a>. Vivamus fermentum, diam vel ornare vestibulum, nibh massa imperdiet lectus, eget tincidunt urna urna nec erat. Curabitur interdum. Nam lorem nunc, posuere quis, suscipit eu, hendrerit vitae, nisi. Etiam hendrerit tincidunt felis.
+        </p>
+        </div>
+      
+        <div id="panel2" role="tabpanel" aria-labelledby="tab2">
+        <p>
+          Vestibulum id eros eu lorem tincidunt sollicitudin. Suspendisse ligula. Sed nisi magna, elementum at, ultricies in, tincidunt imperdiet, quam. Nulla semper. <a href="foo">Suspendisse potenti</a>. Sed sollicitudin dolor aliquet purus. Aliquam dui. Proin arcu metus, porttitor eget, pulvinar nec, molestie dapibus, ligula.
+        </p>
+        </div>
+      
+        <div id="panel3" role="tabpanel" aria-labelledby="tab3">
+          <p>
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam vel erat. <a href="foo">Vestibulum egestas purus ut felis</a>. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+          </p>
+        </div>
+
+        <div id="panel4" role="tabpanel" aria-labelledby="tab4">
+            <p>
+              Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam vel erat. <a href="foo">Vestibulum egestas purus ut felis</a>. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            </p>
+          </div>
+      </div>
+      
+      <script>
+        showTab(1);
+      </script>
+</body>
+</html>
