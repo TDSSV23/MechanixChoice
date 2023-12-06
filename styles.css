@@ -299,7 +299,7 @@ h2 {
 .tabList {
   list-style-type: none;
   padding: 0;
-  margin: 0 auto;
+  margin: 1 auto;
   display: flex;
   justify-content: center;
 }
@@ -345,6 +345,20 @@ h2 {
 .hide, div[aria-hidden=true] {
   display: none;
 }
+
+/* Estilo para os botões de navegação do carrossel */
+.carousel-button {
+  position: absolute;
+  margin-left: 26.5%;
+  top: 73%;
+  transform: translateY(-50%);
+  font-size: 25px; /* Ajuste o tamanho conforme necessário */
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+}
+
 
 /* barra de pesquisa */
 
